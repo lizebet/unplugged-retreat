@@ -86,31 +86,61 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-    /*-------------Base-Header - Footer Styles -------------*/
+   
+  /* General Styles */
 
+    html {
+      font-size: 16px;
+   }
+
+    body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    }
+
+    h2 {
+     font-family: 'Poppins', sans-serif;
+    } 
+ 
+    h3, 
+    h4 {
+     font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      color: #e2e3ed;
+      text-decoration: none;
+ }
+
+    p, li, .copy-right{
+      line-height: 24px;
+      font-size: .08625;
+    }
+
+    
+    /*-------------Base-Header - Footer Styles -------------*/
 
     header,
     footer {
-
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-flow: row wrap;
+      margin: 0;
 
     }
 
     header .content-wrapper {
       display: flex;
-      justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      margin: 0;
+      
       
      }
 
 
     header {
-      padding: 15px 0;
+     padding: 15px 0;
     }
 
 
@@ -124,17 +154,22 @@ textarea {
 
     header nav {
      display: flex;
-     justify-content: space-around;
-     align-items: center;
-     flex-flow: row wrap;
-     width: 60%;
     }
 
     header nav ul {
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      }
+    display: flex;
+    justify-content: space-between;
+    
+  
+  
+  }
+
+  header nav ul li {
+    display: flex;
+    padding: 25px;
+  }
+      
+  
 
    .form-description {
      padding: 15px;
@@ -166,23 +201,23 @@ textarea {
   }
 
 
-    footer .social-icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+  footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
       
    }
 
 
-    footer .social-icons p {
-      display: flex;
-      justify-content: center;
-      align-content: center;
+  footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
     }
 
-    footer .content-wrapper {
-      width: 55%; 
-      margin: 50px 0;
+  footer .content-wrapper {
+  width: 55%; 
+  margin: 50px 0;
     }
 
     footer p {
